@@ -18,7 +18,7 @@ public class Team extends BaseEntity {
     @Column(name = "fan_base", nullable = false)
     private Integer fanBase;
 
-    @Column(nullable = false)
+    @Column(nullable = false,columnDefinition = "TEXT")
     private String history;
 
     @ManyToOne(optional = false)

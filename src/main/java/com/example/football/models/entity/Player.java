@@ -24,7 +24,7 @@ public class Player extends BaseEntity {
     private LocalDate birthDate;
 
     @Column(nullable = false)
-    @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.ORDINAL)
     private Position position;
 
     @ManyToOne(optional = false)

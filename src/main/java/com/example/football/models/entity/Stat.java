@@ -11,15 +11,15 @@ public class Stat extends BaseEntity{
 
     @Column(nullable = false)
     @Positive
-    private double shooting;
+    private float shooting;
 
     @Column(nullable = false)
     @Positive
-    private double passing;
+    private float passing;
 
     @Column(nullable = false)
     @Positive
-    private double endurance;
+    private float endurance;
 
     public Stat() {
     }
@@ -28,7 +28,7 @@ public class Stat extends BaseEntity{
         return shooting;
     }
 
-    public void setShooting(double shooting) {
+    public void setShooting(float shooting) {
         this.shooting = shooting;
     }
 
@@ -36,7 +36,7 @@ public class Stat extends BaseEntity{
         return passing;
     }
 
-    public void setPassing(double passing) {
+    public void setPassing(float passing) {
         this.passing = passing;
     }
 
@@ -44,7 +44,7 @@ public class Stat extends BaseEntity{
         return endurance;
     }
 
-    public void setEndurance(double endurance) {
+    public void setEndurance(float endurance) {
         this.endurance = endurance;
     }
 }

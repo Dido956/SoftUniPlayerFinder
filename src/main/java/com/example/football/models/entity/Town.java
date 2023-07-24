@@ -14,7 +14,7 @@ public class Town extends BaseEntity {
     @Column(nullable = false)
     private Integer population;
 
-    @Column(name = "travel_guide", nullable = false)
+    @Column(name = "travel_guide", nullable = false,columnDefinition = "TEXT")
     private String travelGuide;
 
     public Town() {}
