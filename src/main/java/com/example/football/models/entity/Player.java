@@ -6,6 +6,8 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 import java.time.LocalDate;
 
+import static com.example.football.util.Constants.EXPORT_FORMAT;
+
 @Entity
 @Table(name = "player")
 public class Player extends BaseEntity {
@@ -102,5 +104,14 @@ public class Player extends BaseEntity {
 
     public void setStat(Stat stat) {
         this.stat = stat;
+    }
+
+    @Override
+    public String toString() {
+        return String.format(EXPORT_FORMAT,
+                firstName,lastName,
+                position,
+                team.getName(),
+                team.getStadiumName());
     }
 }

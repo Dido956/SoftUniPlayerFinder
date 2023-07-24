@@ -1,6 +1,8 @@
 package com.example.football.service;
 
 
+import com.example.football.models.entity.Town;
+
 import java.io.IOException;
 
 //ToDo - Implement all methods
@@ -12,4 +14,5 @@ public interface TownService {
 	
 	String importTowns() throws IOException;
 
+    Town findByName(String townName);
 }

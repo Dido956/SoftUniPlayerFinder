@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface StatRepository extends JpaRepository<Stat, Long> {
+    boolean existsByPassingAndShootingAndEndurance(float passing, float shooting, float endurance);
 }

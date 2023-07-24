@@ -72,4 +72,8 @@ public class TownServiceImpl implements TownService {
     private Town existsByTownName(String townSeedDtoName) {
         return townRepository.findByName(townSeedDtoName).orElse(null);
     }
+    @Override
+    public Town findByName(String townName) {
+        return townRepository.findByName(townName).orElse(null);
+    }
 }
